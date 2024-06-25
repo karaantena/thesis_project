@@ -347,8 +347,8 @@ app.post('/update-record', (req, res) => {
 
 testConnection();
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+app.listen(3001, () => {
+    console.log(`Server running at http://localhost:${3001}`);
 });
 
 
