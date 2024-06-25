@@ -1,0 +1,5 @@
+runtime: nodejs18
+service: server
+entrypoint: node index.js
+env_variables:
+ VISTA_DB_SOCKET: "/cloudsql/buoyant-arcanum-427022-q0:europe-west3:vista-ai"

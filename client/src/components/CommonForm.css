@@ -1,0 +1,222 @@
+body {
+    font-family: 'Sofia Pro', 'Arial', 'Helvetica', sans-serif;
+  }
+  
+  .container {
+    background-color: #fff;
+    justify-content: center;
+    align-content: center;
+    padding: 2%;
+    border-radius: 20px;
+    overflow: auto;
+    height: 85%;
+  }
+  
+  .middleHeader {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+  }
+  
+  .sectionsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 2%;
+  }
+  
+  .leftSection,
+  .rightSection {
+    margin-top: 20px;
+    flex: 0 0 30%;
+    min-width: 400px;
+    margin-left: 3%;
+    margin-right: 2%;
+  }
+  
+  .inputWrapper {
+    margin-top: 10px;
+
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  
+  .rowWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fixedWidthField {
+    flex: 1 1 calc(50% - 10px);
+  }
+  .selectedImageContainer {
+    width: 50%;
+   }
+  .header,
+  .selectedImageText {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .imageUploadContainer {
+    margin-bottom: 15px;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .dropZone {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .dropZoneText {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .buttonContainer {
+      width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .selectedImageContainer {
+    width: 50%;
+  }
+  .selectedImageAndButtonsContainer {
+    display: flex;
+  }
+  .button {
+      width: 115px;
+      height: 45px;
+      color: #c4daf4;
+      left: 30px;
+      top: 20px;
+  }
+  .saveButton {
+    width: 50%;
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px #dadada;
+  }
+  
+  .button:hover,
+  .saveButton:hover {
+    background-color: #ea7b00;
+  }
+  
+  .saveButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .fullscreenImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fullscreenImageContent {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 800px) {
+    .sectionsWrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .leftSection,
+    .rightSection {
+      flex: none;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 426px) {
+    .sectionsWrapper {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .leftSection,
+    .rightSection {
+      width: 100%;
+      min-width: auto;
+    }
+    .button {
+      padding: 6px 12px;
+      font-size: 0.875rem;
+      
+    }
+    .saveButton {
+      padding: 6px 80px;
+    }
+    .inputField {
+      font-size: 0.875rem;
+    }
+    .header {
+      font-size: 1.25rem;
+    }
+    .fixedWidthField {
+      font-size: 1.875rem;
+    }
+    .rowWrapper {
+      flex-direction: column;
+    }
+    .dropZone {
+      font-size: 0.875rem;
+      height: 150px;
+      padding: 5px;
+    }
+    .dropZoneText {
+      font-size: 0.875rem;
+    }
+    .inputWrapper {
+      width: 90%;
+      margin-bottom: 8px;
+    }
+    .inputField {
+      padding: 8px;
+    }
+  }
+  

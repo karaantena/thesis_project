@@ -1,0 +1,82 @@
+body, html, #root {
+  font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.navigation-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px; 
+}
+
+.menu-button-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+}
+
+.menu-icon {
+  cursor: pointer;
+  color: #3c788a;
+}
+
+.menu-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.button {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #4e8f8e;
+}
+
+.button.selectedButton {
+  background-color: #c4daf4;
+  color: white;
+}
+
+.user-logout-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .navigation-bar-container {
+    display: none;
+  }
+
+  .drawerPaper {
+    width: 70%; 
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+
+  .menu-list {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,4 @@
+node_modules/
+.git
+.gitignore
+vista_db.sql

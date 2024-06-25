@@ -1,0 +1,76 @@
+.user-icon {
+    cursor: pointer;
+
+  }
+  
+  .user-info {
+    margin-bottom: 20px;
+    text-align: center; 
+
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+    z-index: 2000; 
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000; 
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .change-password-button, .close-modal-button {
+    background-color: #6CD3C8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Sofia Pro', Arial, Helvetica, sans-serif;
+  }
+  
+  .change-password-button:hover, .close-modal-button:hover {
+    background-color: #5bb2a7;
+  }
+  
